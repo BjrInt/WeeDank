@@ -1,0 +1,19 @@
+{
+  "name": "weecloud",
+  "subdomain": "weecloud",
+  "main": "app",
+  "scripts": {
+    "start": "app.js"
+  },
+  "version": "0.1.5",
+  "dependencies": {
+    "express": "~3.3.3",
+    "pug": "^2.0.0-rc.4",
+    "socket.io": "~0.9.16",
+    "validator": "~1.2.1",
+    "weechat": "0.0.16"
+  },
+  "engines": {
+    "node": "0.8.x"
+  }
+}

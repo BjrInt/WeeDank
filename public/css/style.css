@@ -1,0 +1,143 @@
+#center {
+  top: 28px;
+  left: 0;
+  bottom: 43px;
+  position: absolute;
+  width: 100%;
+  overflow: hidden;
+}
+
+@media (max-width: 979px) {
+  #center {
+    top: 30px;
+  }
+}
+
+#buffers {
+  overflow-y: scroll;
+  height: 100%;
+}
+
+#userlist {
+  padding: 15px;
+  overflow: scroll;
+  height: 100%;
+}
+
+#input {
+  position: absolute;
+  bottom: 0;
+  width: 50%;
+  margin-left: 5%;
+}
+
+#input input {
+  width: 100%;
+}
+
+.message {
+  word-wrap: break-word;
+  border-top: 1px solid #eee;
+  padding: 6px 0 6px 0;
+}
+
+#dropdown-buffers {
+  margin-left: 32px;
+}
+
+#total-activity {
+  position: absolute;
+  margin: 5px;
+}
+
+#top {
+  position: absolute;
+  left: 5px;
+  right: 15px;
+  top: 0;
+}
+
+#error {
+  margin-top: 10px;
+  margin-bottom: 0;
+}
+
+.form-signin {
+  max-width: 300px;
+  padding: 19px 29px 29px;
+  margin: 40px auto 20px;
+  background-color: #fff;
+  border: 1px solid #e5e5e5;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+  -webkit-box-shadow: 0 1px 2px rgba(0,0,0,.05);
+  -moz-box-shadow: 0 1px 2px rgba(0,0,0,.05);
+  box-shadow: 0 1px 2px rgba(0,0,0,.05);
+}
+.form-signin .checkbox {
+  margin-bottom: 10px;
+}
+.form-signin input[type="text"],
+.form-signin input[type="password"] {
+  font-size: 16px;
+  height: auto;
+  margin-bottom: 15px;
+  padding: 7px 9px;
+}
+.form-signin p {
+  padding: 10px 0 0 0;
+}
+
+.gh {
+  height: 20px;
+}
+.gh li {
+  float: left;
+  width: 70px;
+}
+
+#emojiul{
+  list-style: none;
+  margin: 0;
+  padding: 20px;
+  display: flex;
+  width : 30vw;
+  flex-wrap: wrap;
+  justify-content: center;
+  background-color: #FFF;
+  box-shadow: 1px 1px 6px rgba(0,0,0,0.4);
+}
+
+#emojiul li{
+  padding : 1px 2px;
+  cursor: pointer;
+  transition: .25s;
+  font-size: 1.1vw;
+}
+
+#emojiul li:hover{
+  transform: scale(1.5);
+}
+
+#emounfold{
+  font-size: 18px;
+  background-color: #555;
+  color: #DDD;
+  padding: 1px;
+  border-radius: 3px;
+  cursor: pointer;
+  display: inline-block;
+  transform: translate(5px, 26px);
+  font-weight: bold;
+  transition: .3s
+}
+
+#emounfold:hover{
+  background : transparent;
+  color: #555;
+}
+
+#maininput{
+  padding-left : 30px;
+}

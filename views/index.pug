@@ -1,0 +1,52 @@
+extends layout
+
+block content
+  span#desktop.visible-desktop
+
+  #top.hide
+    span#total-activity.label
+    #dropdown-buffers
+      select
+  #center.hide.row-fluid
+    #bufferlist.hidden-phone.tabbable.tabs-left.pull-left
+      ul.nav.nav-tabs
+    #userlist.hidden-phone.pull-right
+    #buffers
+      .tab-content
+  #input.hide
+    ul#emojiul
+    span#emounfold
+      E
+    input#maininput(type='text')
+
+  .container
+    form#connect.form-signin
+      h2 WeeCloud
+        small= version
+      ul.gh.unstyled
+        li
+          iframe.github-btn(src='http://ghbtns.com/github-btn.html?user=eirikb&repo=weecloud&type=watch', allowtransparency=true,frameborder=0, scrolling=0, height='20px')
+        li
+          iframe.github-btn(src='http://ghbtns.com/github-btn.html?user=eirikb&repo=weecloud&type=fork', allowtransparency=true, frameborder=0, scrolling=0, height='20px')
+      h3#loading Loading...
+      #connect-container.hide
+        input#host.input-block-level(type='text', placeholder='Host', value=options.host)
+        input#port.input-block-level(type='number', placeholder='Port', value=options.port)
+        input#password.input-block-level(type='password', placeholder='Password')
+        label.checkbox
+          input#ssl(type='checkbox', checked=(options.ssl ? 'checked' : undefined))
+          | SSL
+        label.checkbox
+          input#store(type='checkbox')
+          | Remember me
+          i.tip.icon-info-sign.icon-yellow(title='Passwords are stored plaintext in browser')
+        label.checkbox
+          input#show_thumbnail(type='checkbox')
+          | Show Thumbnail
+        button.btn.btn-large.btn-primary(type='submit') Connect
+        #error.alert.alert-error.hide
+
+      p.muted Enable relay in your WeeChat:
+      pre.muted.
+        /set relay.network.password &lt;pass&gt;
+        /relay add weechat &lt;port&gt;
